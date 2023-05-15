@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const generateMarkdown = require("./generateMarkdown");
+const fs = require('fs')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -40,10 +41,29 @@ const questions = [
     message: "Choose a license",
     choices: ["Apache 2.0", "GNU GPL v3", "MIT", "Mozilla Public License 2.0"],
   },
+  {
+    type: "input",
+    name: "github",
+    message: "Enter your GitHub username"
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Enter your Email"
+  }
+
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, 'utf8', (error) => {
+    if (error) {
+      console.log("Error", error)
+    } else {
+      console.log('File Created')
+    }
+  }); 
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -52,7 +72,8 @@ function init() {
     .then((answers) => {
     //   console.log(answers)
         let string = generateMarkdown(answers)
-        console.log(string)
+        // console.log(string)
+        writeToFile('README.md', string)
     })
     .catch((error) => {
       if (error.isTtyError) {
@@ -69,8 +90,8 @@ init();
 // STEPS
 // require inquirer (check)
 // require the generateMarkdown function (check!)
-// finish questions array according to inquirer Syntax
-// setup the prompt in the init function
+// finish questions array according to inquirer Syntax (check)
+// setup the prompt in the init function (check)
 // finish the logic from generateMarkdown function
 // use the answers from the prompt to generate a markdown string
 // use the markdown string to generate the file
