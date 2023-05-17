@@ -1,9 +1,9 @@
-# Juice Maker 
+# Star Wars Char Generator 
   
   
   ## Description 
 
-  Make the finest juice in town
+  Generator of star wars characters
 
   ## Table of Contents
 
@@ -29,7 +29,7 @@
   ## Usage 
 
   ```bash
-  npm start
+  open in default browser
   ```
 
   ## License 
@@ -40,11 +40,11 @@
 
   ## Contributing
 
-  dont
+  with the force
 
   ## Tests
 
-  just test it
+  no tests yet
 
   ## Questions
 
