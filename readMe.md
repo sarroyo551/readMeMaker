@@ -1,9 +1,9 @@
-# Star Wars Char Generator 
+# Star Wars Character Generator 
   
   
   ## Description 
 
-  Generator of star wars characters
+  An app that generates Star Wars characters at random
 
   ## Table of Contents
 
@@ -40,16 +40,16 @@
 
   ## Contributing
 
-  with the force
+  you do not
 
   ## Tests
 
-  no tests yet
+  no tests
 
   ## Questions
 
   If you have any questions, find me [here](https://github.com/sarroyo551)
 
-  You can email me at santi.arroyo551@gmail.com
+  You can email me at starwarsboy@gmail.com
 
   
