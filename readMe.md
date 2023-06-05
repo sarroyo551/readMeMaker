@@ -1,9 +1,9 @@
-# Star Wars Character Generator 
+# Note Taker 
   
   
   ## Description 
 
-  An app that generates Star Wars characters at random
+  an application where you can write and save notes
 
   ## Table of Contents
 
@@ -23,7 +23,7 @@
   ## Installation
 
   ```bash
-  npm install
+  npm i
   ```
 
   ## Usage 
@@ -40,16 +40,16 @@
 
   ## Contributing
 
-  you do not
+  no contriutions yet
 
   ## Tests
 
-  no tests
+  no tests available
 
   ## Questions
 
   If you have any questions, find me [here](https://github.com/sarroyo551)
 
-  You can email me at starwarsboy@gmail.com
+  You can email me at santi.arroyo551@gmail.com
 
   
